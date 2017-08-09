@@ -26,43 +26,8 @@
           <oraclePassword>welcome1</oraclePassword>
         </configuration>
       </plugin>
-      <plugin>
-        <groupId>com.oracle.adf.plugin</groupId>
-        <artifactId>ojdeploy</artifactId>
-        <version>12.2.1-0-0</version>
-        <configuration>
-          <ojdeploy>
-            ${oracleHome}/jdeveloper/jdev/bin/ojdeploy.exe
-          </ojdeploy>
-          <workspace>
-            ${basedir}/../my-servicebus-application.jws
-          </workspace>
-          <project>
-            my-project
-          </project>
-          <profile>
-            my-project
-          </profile>
-          <outputfile>
-            ${project.build.directory}/${project.build.finalName}.jar
-          </outputfile>
-        </configuration>
-        <executions>
-          <execution>
-            <phase>package</phase>
-            <goals>
-              <goal>deploy</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
     </plugins>
   </build>
   
   <description></description>
-  <properties>
-    <oracleHome>
-      ${env.ORACLE_HOME}
-    </oracleHome>
-  </properties>
 </project>
