@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.mycompany</groupId>
+  <artifactId>System</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>sbar</packaging>
+  
+  <parent>
+    <groupId>com.oracle.servicebus</groupId>
+    <artifactId>sbar-system-common</artifactId>
+    <version>12.2.1-0-0</version>
+    <relativePath></relativePath>
+  </parent>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.oracle.servicebus.plugin</groupId>
+        <artifactId>oracle-servicebus-plugin</artifactId>
+        <version>12.2.1-0-0</version>
+        <configuration>
+          <oracleServerUrl>http://localhost:7001</oracleServerUrl>
+          <oracleUsername>weblogic</oracleUsername>
+          <oraclePassword>welcome1</oraclePassword>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
+</project>
