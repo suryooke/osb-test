@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/dbReference" xmlns="http://xmlns.oracle.com/pcbpel/adapter/db/top/dbReference" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="TestConfigCollection" type="TestConfigCollection"/>
+   <xs:complexType name="TestConfigCollection">
+      <xs:sequence>
+         <xs:element name="TestConfig" type="TestConfig" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="TestConfig">
+      <xs:sequence>
+         <xs:element name="key" type="xs:string" nillable="true"/>
+         <xs:element name="value" type="xs:string" minOccurs="0" nillable="true"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:element name="dbReferenceSelectInputParameters" type="dbReferenceSelect"/>
+   <xs:complexType name="dbReferenceSelect">
+      <xs:sequence/>
+   </xs:complexType>
+</xs:schema>

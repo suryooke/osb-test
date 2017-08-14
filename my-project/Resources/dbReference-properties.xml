@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+   <entry key="TEST_CONFIG:db_table_type">TABLE</entry>
+   <entry key="TEST_CONFIG.VALUE:db_column_size">20</entry>
+   <entry key="TEST_CONFIG.KEY:db_column_type">VARCHAR2</entry>
+   <entry key="TEST_CONFIG.KEY:db_column_not_null">false</entry>
+   <entry key="TEST_CONFIG:db_column_1">VALUE</entry>
+   <entry key="TEST_CONFIG.KEY:db_column_size">20</entry>
+   <entry key="TEST_CONFIG:db_column_0">KEY</entry>
+   <entry key="return_single_result_set">false</entry>
+   <entry key="TEST_CONFIG.VALUE:db_column_not_null">false</entry>
+   <entry key="root_descriptor_alias">TEST_CONFIG</entry>
+   <entry key="TEST_CONFIG.VALUE:db_column_type">VARCHAR2</entry>
+</properties>

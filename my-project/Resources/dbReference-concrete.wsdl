@@ -1,0 +1,27 @@
+<wsdl:definitions targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/my-servicebus-application/my-project/dbReference" name="dbReference-concrete" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+    <wsdl:import location="dbReference.wsdl" namespace="http://xmlns.oracle.com/pcbpel/adapter/db/my-servicebus-application/my-project/dbReference"/>
+    <wsdl:binding name="dbReference_ptt-binding" type="dbr:dbReference_ptt" xmlns:dbr="http://xmlns.oracle.com/pcbpel/adapter/db/my-servicebus-application/my-project/dbReference">
+        <soap:binding style="document" transport="http://www.bea.com/wli/sb/transports/jca"/>
+        <wsdl:operation name="merge">
+            <soap:operation soapAction="merge"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="insert">
+            <soap:operation soapAction="insert"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="dbReferenceSelect">
+            <soap:operation soapAction="dbReferenceSelect"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+</wsdl:definitions>
